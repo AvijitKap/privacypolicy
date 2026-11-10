@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - FocusFeed</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #24292f;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+    h1 { border-bottom: 1px solid #d0d7de; padding-bottom: 0.3em; }
+    h2 { border-bottom: 1px solid #d0d7de; padding-bottom: 0.3em; margin-top: 28px; }
+    h3 { margin-top: 20px; }
+    code { background-color: #f6f8fa; padding: 0.2em 0.4em; border-radius: 6px; font-size: 85%; }
+    hr { border: 0; border-top: 1px solid #d0d7de; margin: 24px 0; }
+    ul, ol { padding-left: 2em; }
+    li { margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+
+  <h1>Privacy Policy for FocusFeed</h1>
+  <p>
+    <strong>Effective Date:</strong> November 10, 2026<br>
+    <strong>App Name:</strong> FocusFeed (Package: <code>com.crackeddev.focusfeed</code>)<br>
+    <strong>Developer:</strong> CrackedDev
+  </p>
+
+  <h2>1. Overview</h2>
+  <p>FocusFeed ("the App"), developed by CrackedDev ("we", "our", or "us"), is a productivity and screen-time management application designed to help users block distracting short-form content and notifications during active focus sessions.</p>
+  <p>We are committed to protecting your privacy. <strong>All screen detection, app blocking, and notification filtering occur 100% locally on your device. We do not operate external servers to collect, store, transmit, share, or sell your personal or sensitive usage data.</strong></p>
+
+  <h2>2. Sensitive Permissions &amp; API Disclosures</h2>
+  <p>To function as an effective focus and distraction-blocking tool, FocusFeed requires your explicit consent to use two high-privilege Android system services. Below is an exact disclosure of how these services operate and how your data is handled:</p>
+
+  <h3>A. AccessibilityService API (<code>android.permission.BIND_ACCESSIBILITY_SERVICE</code>)</h3>
+  <ul>
+    <li><strong>Why we request it:</strong> FocusFeed uses the Android AccessibilityService API strictly to enforce your user-configured focus sessions and prevent session circumvention.</li>
+    <li><strong>What it detects:</strong> During an active focus session, the service monitors foreground package names and window/view hierarchy identifiers solely to detect:
+      <ol>
+        <li><strong>YouTube Shorts</strong> interfaces within the YouTube app.</li>
+        <li><strong>Instagram</strong> (including Instagram Reels and feed screens).</li>
+        <li><strong>Application uninstall and force-stop system screens</strong> targeting FocusFeed while a locked focus timer is actively running.</li>
+      </ol>
+    </li>
+    <li><strong>How data is processed:</strong> All screen event inspection happens <strong>100% locally and ephemerally in real-time memory on your device</strong>. FocusFeed does not read, log, capture, save, or transmit your personal messages, passwords, keystrokes, browsing history, or screen text to any external server or third party.</li>
+  </ul>
+
+  <h3>B. NotificationListenerService API (<code>android.permission.BIND_NOTIFICATION_LISTENER_SERVICE</code>)</h3>
+  <ul>
+    <li><strong>Why we request it:</strong> FocusFeed uses the NotificationListenerService API to prevent notification distractions while you are working or studying.</li>
+    <li><strong>What it detects:</strong> During an active focus session, the service checks the originating package name of incoming notifications solely to identify and suppress notifications from <strong>Instagram</strong>.</li>
+    <li><strong>How data is processed:</strong> Notification metadata is evaluated <strong>locally on your device in real time</strong>. FocusFeed never reads, stores, logs, or transmits the content of your notifications, messages, or contacts.</li>
+  </ul>
+
+  <h2>3. Subscriptions &amp; In-App Payments</h2>
+  <ul>
+    <li><strong>Google Play Billing:</strong> FocusFeed offers optional paid subscriptions and in-app purchases processed exclusively through the <strong>Google Play Billing API</strong>.</li>
+    <li><strong>No Financial Data Collected by Us:</strong> When you make a purchase, the transaction is handled directly by Google Play. CrackedDev never receives, processes, or stores your name, email address, credit/debit card details, UPI ID, or billing address.</li>
+    <li><strong>Subscription Verification:</strong> FocusFeed communicates with the Google Play Store client on your device only to verify anonymous purchase tokens and subscription status (active/expired) so that Pro features can be unlocked.</li>
+    <li>For more details on how Google handles payment information, please refer to the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</li>
+  </ul>
+
+  <h2>4. Data Collection, Storage, and Sharing</h2>
+  <ul>
+    <li><strong>Personal Data:</strong> We do not require account registration and do not collect your name, email address, phone number, location, or personal identifiers.</li>
+    <li><strong>App Preferences:</strong> Your focus session timers, blocklist settings, and usage statistics are stored strictly locally on your device using standard Android local storage.</li>
+    <li><strong>Third-Party Sharing:</strong> Zero personal, screen, or notification data ever leaves your device or is shared with third parties, advertisers, or analytics providers.</li>
+  </ul>
+
+  <h2>5. User Control &amp; Revoking Permissions</h2>
+  <p>You have full control over the permissions and subscriptions associated with FocusFeed at any time:</p>
+  <ol>
+    <li><strong>Revoke Accessibility Access:</strong> Go to your device's <strong>Settings &rarr; Accessibility &rarr; Installed Apps (or Downloaded Services) &rarr; FocusFeed</strong> and toggle the service off.</li>
+    <li><strong>Revoke Notification Access:</strong> Go to your device's <strong>Settings &rarr; Notifications &rarr; Notification access (or Device &amp; app notifications) &rarr; FocusFeed</strong> and toggle access off.</li>
+    <li><strong>Manage or Cancel Subscriptions:</strong> You can view, manage, or cancel your subscription at any time through the <strong>Google Play Store app &rarr; Profile Icon &rarr; Payments &amp; subscriptions &rarr; Subscriptions &rarr; FocusFeed</strong>.</li>
+    <li><strong>Data Deletion:</strong> Because all app preferences and timer configurations are stored locally on your device, clearing the app's storage or uninstalling FocusFeed permanently and immediately deletes all local data associated with the App.</li>
+  </ol>
+
+  <h2>6. Changes to This Privacy Policy</h2>
+  <p>We may update this Privacy Policy from time to time to reflect changes in app functionality or Google Play policy requirements. Any updates will be posted to this URL with an updated "Effective Date."</p>
+
+  <h2>7. Contact Us</h2>
+  <p>If you have any questions or concerns regarding this Privacy Policy or FocusFeed's privacy practices, please contact us at:</p>
+  <ul>
+    <li><strong>Developer:</strong> CrackedDev</li>
+    <li><strong>Email:</strong> avijitkapoor623@gmail.com</li>
+  </ul>
+
+</body>
+</html>
